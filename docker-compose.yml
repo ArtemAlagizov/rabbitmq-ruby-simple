@@ -4,7 +4,7 @@ services:
     build:
       context: ./rabbit-on-rails
       dockerfile: Dockerfile
-    command: ["./wait-for-it.sh", "rabbitmq:5672", "--", "ruby", "listener.rb"]
+    command: ["./wait-for-it.sh", "rabbitmq:5672", "-t", "25", "--", "ruby", "listener.rb"]
     volumes:
       - ./rabbit-on-rails:/rabbit-on-rails
       - type: tmpfs
