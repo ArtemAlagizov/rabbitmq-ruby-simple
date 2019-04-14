@@ -10,9 +10,9 @@ to send a message
 2) go to the rabbit-on-rails folder
 3) with docker toolbox run 
 ````
-ruby publisher.rb
+ruby listener.rb
 ````
 4) with docker desktop change host :host => "192.168.99.100" in publisher.rb to :host => "localhost" and run
 ````
-ruby publisher.rb
+ruby listener.rb
 ````
